@@ -71,3 +71,8 @@ not depend on any previous test.  A sample implementation is provided below.
     return [NSSet setWithObjects:requestAuthToken, loginUser, nil];
 }
 ```
+
+## Roadmap
+
+This framework is still in early development.  It is functioning and is being used in internal projects, thought it 
+needs more work to make integration easier and more clear for potential 3rd party usage.
