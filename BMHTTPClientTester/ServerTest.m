@@ -26,13 +26,15 @@
 }
 
 + (id)testWithName:(NSString *)name
-          runBlock:(RunBlock)runBlock {
+          runBlock:(RunBlock)runBlock
+{
     return [self testWithName:name previousTest:nil runBlock:runBlock];
 }
 
 + (id)testWithName:(NSString *)name
       previousTest:(ServerTest *)previousTest
-          runBlock:(RunBlock)runBlock {
+          runBlock:(RunBlock)runBlock
+{
     ServerTest *test = ServerTest.new;
     test.name = name;
     test.dependentTests = NSMutableSet.new;
